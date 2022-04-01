@@ -17,8 +17,8 @@ stories:
 - story: Buyer path
   steps:
   - intent: buyer
-  - action: user_detail_form
-  - action: action_submit
+  # - action: user_detail_form
+  # - action: action_submit
   - action: utter_buyer
   - action: action_service1
 
@@ -41,13 +41,13 @@ stories:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- story: Seller path
+- story: Seller
   steps:
   - intent: seller
   - action: utter_seller
   - action: action_service2
 
-- story: Seller path
+- story: Seller path 
   steps:
   - intent: details_property
   - action: action_service3
@@ -78,3 +78,9 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
+- story: time
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: time
+  - action: action_show_time
