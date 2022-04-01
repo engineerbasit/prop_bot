@@ -2,11 +2,12 @@ version: "2.0"
 
 intents:
   - greet
+  - time
   - buyer
   - perfect_choices
   - where_from
   - areas
-  - num_bedroom
+  - num_bedrooms
   - num_bathroom
   - more_info
   - price
@@ -125,12 +126,14 @@ responses:
   - text: "I am a bot, powered by ALGO_nlp."
 
 actions:
-  - action_submit
+  # - action_submit
   - action_service
+  - action_hello_world
   - action_service1
   - action_service2
   - action_service3
-  - user_detail_from
+  - action_show_time
+  # - user_detail_from
   - action_saveconversation
 forms:
   user_detail_form:
